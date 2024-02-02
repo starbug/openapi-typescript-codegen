@@ -4,8 +4,9 @@
  * {{{escapeComment description}}}
 {{/if}}
 {{#if deprecated}}
+ *
  * @deprecated
 {{/if}}
  */
 {{/ifdef}}
-export type {{{name}}} = {{>type}};
+export interface I{{{name}}} {{>type}};

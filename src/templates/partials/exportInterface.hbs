@@ -8,7 +8,7 @@
 {{/if}}
  */
 {{/ifdef}}
-export type {{{name}}} = {
+export interface I{{{name}}} {
 	{{#each properties}}
 	{{#ifdef description deprecated}}
 	/**
@@ -16,6 +16,7 @@ export type {{{name}}} = {
 	 * {{{escapeComment description}}}
 	{{/if}}
 	{{#if deprecated}}
+	 *
 	 * @deprecated
 	{{/if}}
 	 */

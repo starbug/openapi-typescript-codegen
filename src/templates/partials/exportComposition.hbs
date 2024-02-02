@@ -4,11 +4,12 @@
  * {{{escapeComment description}}}
 {{/if}}
 {{#if deprecated}}
+ *
  * @deprecated
 {{/if}}
  */
 {{/ifdef}}
-export type {{{name}}} = {{>type parent=name}};
+export interface I{{{name}}} {{>type parent=name}};
 {{#if enums}}
 {{#unless @root.useUnionTypes}}
 
@@ -21,6 +22,7 @@ export namespace {{{name}}} {
 	 * {{{escapeComment description}}}
 	{{/if}}
 	{{#if deprecated}}
+	 *
 	 * @deprecated
 	{{/if}}
 	 */
